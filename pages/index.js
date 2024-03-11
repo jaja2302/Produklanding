@@ -18,8 +18,8 @@ const Home = () => {
           animate="show"
            exit="hidden"
         className='h1'>
-          Ini title bla bla bla <br/> into {' '}
-          <span className='text-accent'>Laman Kita</span>
+          Gelas Asli Produk Kalimantan <br/> Asli {' '}
+          <span className='text-accent'>Dibuat dengan sangat teliti</span>
         </motion.h1>
         {/* subtitle  */}
         <motion.p 
