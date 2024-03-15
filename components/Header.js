@@ -11,7 +11,7 @@ const Header = () => {
           <Link href={'/'}>
             {/* logo  */}
             <Image 
-            src={'/logo.svg'}
+            src={'/Laman Kita_transparent.png'}
             width={220}
             height={48}
             alt=''

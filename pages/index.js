@@ -18,8 +18,9 @@ const Home = () => {
           animate="show"
            exit="hidden"
         className='h1'>
-          Gelas Asli Produk Kalimantan <br/> Asli {' '}
-          <span className='text-accent'>Dibuat dengan sangat teliti</span>
+          Gelas Cantik   {' '}
+          <span className='text-accent'>Dan</span>
+          Unik
         </motion.h1>
         {/* subtitle  */}
         <motion.p 
@@ -28,7 +29,7 @@ const Home = () => {
           animate="show"
            exit="hidden"
         className='max-w-sm xl:max-w-xl mx:auto  xl:mx-0 mb-10 xl:mb-16'>
-          lorem ipsum
+          Produk Asli Kalimantan yang terbuat dengan sangat teliti sehingga menghasilkan produk yang menarik dan terbaik.
         </motion.p> 
         {/* button  */}
         <div className='flex justify-center xl:hidden relative'>
@@ -58,7 +59,7 @@ const Home = () => {
        initial="hidden" 
        animate="show"
         exit="hidden"
-      className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'>
+      className='w-full h-full max-w-[500px] max-h-[750px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'>
         <Avatar/>
       </motion.div>
       </div>

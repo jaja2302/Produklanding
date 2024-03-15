@@ -90,7 +90,7 @@ const aboutData = [
   },
 ];
 
-import Avatar from '../../components/Avatar'
+import Avatar from '../../components/Avatar2'
 import Circles from '../../components/Circles'
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';

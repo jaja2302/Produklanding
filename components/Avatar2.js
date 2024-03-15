@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-const Avatar = () => {
+const Avatar2 = () => {
   return( 
   <div className="hidden xl:flex xl:max-w-none">
       <Image
-      src={'/produk1.png'}
+      src={'/produk2.png'}
       width={737}
       height={678}
       alt=""
@@ -14,4 +14,4 @@ const Avatar = () => {
   );
 };
 
-export default Avatar;
+export default Avatar2;
