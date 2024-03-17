@@ -1,83 +1,71 @@
-// icons
-import {
-  RxCrop,
-  RxPencil2,
-  RxDesktop,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-} from "react-icons/rx";
-import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css';
-import 'swiper/css/pagination';
+import React from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
-// data
-const serviceDatax = [
+const productData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    img: '/produk1.png',
+    title: 'Product 1',
+    price: '$100',
   },
   {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    img: '/produk2.png',
+    title: 'Product 2',
+    price: '$150',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    img: '/produk2.png',
+    title: 'Product 3',
+    price: '$200',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    img: '/produk2.png',
+    title: 'Product 4',
+    price: '$120',
   },
   { 
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    img: '/produk2.png',
+    title: 'Product 5',
+    price: '$180',
   },
 ];
 
 const ServiceSlider = () => {
   return (
-    <Swiper
-      breakpoints={{
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 15
-        },
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 15
-        }
-      }}
-      pagination={{
-        clickable: true
-      }}
-      className="h-[240px] sm:h-[340px]"
-    >
-      {serviceDatax.map((item, index) => {
-        return (
-          <SwiperSlide key={index}>
-            <div className="bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer">
-              {/* icon  */}
-              <div>{item.icon}</div>
-              <div>
-                <div>{item.title}</div>
-                <p>{item.description}</p>
-              </div>
-              {/* arrow  */}
-              <div className="text-3xl">
-                <RxArrowTopRight />
-              </div>
+    <div className="max-w-[600px] max-h-[300px]">
+      <Splide
+        options={{
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          gap: "1rem",
+          pagination: false,
+          breakpoints: {
+            768: {
+              perPage: 2,
+            },
+            576: {
+              perPage: 1,
+            },
+          },
+        }}
+      >
+        {productData.map((product, index) => (
+          <SplideSlide key={index}>
+            <div
+              className="product-item"
+              style={{ textAlign: "center", marginBottom: "1rem" }}
+            >
+              <img src={product.img} alt={product.title} style={{ maxWidth: "100%" }} />
+              <h3>{product.title}</h3>
+              <p>{product.price}</p>
             </div>
-          </SwiperSlide>
-        )
-      })}
-    </Swiper>
-  )
+          </SplideSlide>
+        ))}
+      </Splide>
+    </div>
+  );
 };
 
 export default ServiceSlider;

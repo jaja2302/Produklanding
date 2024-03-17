@@ -1,90 +1,63 @@
-// icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
 
 import React, {useState} from 'react';
 
 
 //  data
-const aboutData = [
+const dataProduk = [
   {
-    title: 'skills',
+    title: 'Fitur',
     info: [
       {
-        title: 'Web Development',
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-        ],
+        title: 'Material Berkualitas Tinggi',
+        description: 'Dibuat dari bahan langka yang terbuat dari kayu, memberikan keunikan dan keindahan yang langka.',
       },
       {
-        title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: 'Desain Unik',
+        description: 'Setiap produk dirancang secara unik dan dibuat dengan tangan, membutuhkan waktu yang lama untuk setiap pembuatannya.',
+      },
+      {
+        title: 'Penggunaan Serbaguna',
+        description: 'Cocok untuk pameran atau pesta untuk menunjukkan keunikan dan efek penyembuhan saat digunakan.',
       },
     ],
   },
   {
-    title: 'awards',
+    title: 'Manfaat',
     info: [
       {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
+        title: 'Efek Penyembuhan',
+        description: 'Dipercaya memiliki efek penyembuhan saat digunakan untuk minum, memberikan pengalaman yang istimewa.',
       },
       {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
+        title: 'Elegan dan Langka',
+        description: 'Didesain dengan keanggunan dan kesederhanaan yang langka, cocok untuk penggunaan sehari-hari.',
       },
     ],
   },
   {
-    title: 'experience',
+    title: 'Bahan',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Bahan Langka',
+        description: 'Dipilih dengan teliti untuk memberikan produk yang langka dan bernilai tinggi.',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Handcraft',
+        description: 'Setiap produk dibuat dengan tangan oleh pengrajin terampil, memastikan kualitas yang luar biasa.',
       },
     ],
   },
   {
-    title: 'credentials',
+    title: 'Desain',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Elegan dan Ergonomis',
+        description: 'Desain yang elegan dan ergonomis, memberikan pengalaman pengguna yang nyaman dan istimewa.',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Kesempurnaan Setiap Detail',
+        description: 'Dirancang dengan teliti untuk memastikan setiap detail mencerminkan keindahan dan kualitas produk.',
       },
     ],
   },
@@ -113,29 +86,29 @@ const About = () => {
     </motion.div>
     <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
       <div className='flex-1 flex flex-col justify-center'>
-        <h2 className='h2'> Ini adalah produk andalan <span className='text-accent'> Stories</span> dari asli kalimantan</h2>
-        <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'> Terbuat dengan balutan tangan asli sekali yaayyaayya</p>
+      <h2 className='h2'>Pilihan Terbaik dari Kalimantan</h2>
+      <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Dibuat dengan keahlian tangan terbaik untuk pengalaman yang istimewa.</p>
 
         {/* counter hitungan  */}
         <div>
             <div className='flex flex-1 xl:gap-x-6'>
               {/* experience  */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0' >
-                  <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2' >
-                    <CountUp start={0} end={10} duration={5} /> +
-                  </div>
-                  <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                    Year of experience
-                  </div>    
+                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2' >
+                  <CountUp start={0} end={2} duration={5} /> +
+                </div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
+                Tahun Berkarya
+                </div>    
               </div>
 
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0' >
-                  <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2' >
-                    <CountUp start={0} end={15} duration={5} /> +
-                  </div>
-                  <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                    Terjual
-                  </div>    
+                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2' >
+                  <CountUp start={0} end={15} duration={5} /> +
+                </div>
+                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
+                  Unit Terjual
+                </div>    
               </div>
 
               
@@ -143,42 +116,27 @@ const About = () => {
         </div>
       </div>
       {/* info  */}
-      <div className='flex flex-col w-full xl:max-w-[48%] h-[480px]' >
-        <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:max-8 mb-4'>
-           {aboutData.map((item,itemIndex) =>{
-            return(
+      <div className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
+          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:max-8 mb-4'>
+            {dataProduk.map((item, itemIndex) => (
               <div
-              key={itemIndex}
-              className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'}  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-            onClick={()  => setIndex(itemIndex)}
-           >
-                    {item.title}
-                </div>
-            )
-           })}
+                key={itemIndex}
+                className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'}  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                onClick={() => setIndex(itemIndex)}
+              >
+                {item.title}
+              </div>
+            ))}
+          </div>
+          <div className='bg-pink-400/10 py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+            {dataProduk[index].info.map((item, itemIndex) => (
+              <div key={itemIndex} className='flex-1 flex flex-col max-w-[400px] gap-y-2 text-white/60'>
+                <div className='font-bold mb-1'>{item.title}</div>
+                <div className='font-light'>{item.description}</div>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className='bg-pink-400/10 py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
-          {aboutData[index].info.map((item,itemIndex)=>{
-            return(
-                <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
-                    <div className='font-light mb-2 md:mb-0'>
-                    {item.title}
-                    </div>
-                    <div className='hidden md:flex'>-</div>
-                    <div>{item.stage}</div>
-                    {/* icon  */}
-                    <div className='flex gap-x-4'>
-                    {item.icons?.map((icon, itemIndex)=>{
-                        return <div className='text-2xl'>{icon}</div>
-                    })}
-                    </div>
-                  
-                </div>
-            )
-          })}
-        </div>
-
-      </div>
     </div>
   </div>
   )

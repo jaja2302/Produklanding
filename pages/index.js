@@ -12,25 +12,28 @@ const Home = () => {
     <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
       <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
         {/* titile  */}
-        <motion.h1
-          variants={fadeIn('down',0.2)}
-          initial="hidden" 
+                <motion.h1
+          variants={fadeIn('down', 0.2)}
+          initial="hidden"
           animate="show"
-           exit="hidden"
-        className='h1'>
-          Gelas Cantik   {' '}
-          <span className='text-accent'>Dan</span>
-          Unik
+          exit="hidden"
+          className='h1'
+        >
+          Gelas dengan Kerajinan yang
+          {' '}
+          <span className='text-accent'>Eksklusif</span>
         </motion.h1>
-        {/* subtitle  */}
-        <motion.p 
-          variants={fadeIn('down',0.3)}
-          initial="hidden" 
+        {/* subtitle */}
+        <motion.p
+          variants={fadeIn('down', 0.3)}
+          initial="hidden"
           animate="show"
-           exit="hidden"
-        className='max-w-sm xl:max-w-xl mx:auto  xl:mx-0 mb-10 xl:mb-16'>
-          Produk Asli Kalimantan yang terbuat dengan sangat teliti sehingga menghasilkan produk yang menarik dan terbaik.
-        </motion.p> 
+          exit="hidden"
+          className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
+        >
+          Dibuat secara eksklusif di Kalimantan, setiap bagian gelas dibuat dengan teliti untuk menciptakan produk yang menarik dan berkualitas tinggi.
+        </motion.p>
+
         {/* button  */}
         <div className='flex justify-center xl:hidden relative'>
           <ProjectsBtn />

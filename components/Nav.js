@@ -13,16 +13,16 @@ import {
 // nav data
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
-  { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
+  { name: 'Tentang Kami', path: '/about', icon: <HiUser /> },
+  { name: 'Produk Kami', path: '/services', icon: <HiRectangleGroup /> },
+  // { name: 'work', path: '/work', icon: <HiViewColumns /> },
+  // {
+  //   name: 'testimonials',
+  //   path: '/testimonials',
+  //   icon: <HiChatBubbleBottomCenterText />,
+  // },
   {
-    name: 'testimonials',
-    path: '/testimonials',
-    icon: <HiChatBubbleBottomCenterText />,
-  },
-  {
-    name: 'contact',
+    name: 'Hubungi Kami',
     path: '/contact',
     icon: <HiEnvelope />,
   },

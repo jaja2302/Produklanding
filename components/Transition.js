@@ -20,13 +20,13 @@ const Transition = () => {
     <>
       <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#2e2257]'
         variants={TransitionVariants} initial='initial' animate='animate' exit='exit'
-        transition={{ delay: 0.2, duration: 0.6, ease: 'easeInOut' }}>1</motion.div>
+        transition={{ delay: 0.2, duration: 0.6, ease: 'easeInOut' }}></motion.div>
       <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#0040ff]'
         variants={TransitionVariants} initial='initial' animate='animate' exit='exit'
-        transition={{ delay: 0.4, duration: 0.6, ease: 'easeInOut' }}>1</motion.div>
+        transition={{ delay: 0.4, duration: 0.6, ease: 'easeInOut' }}></motion.div>
         <motion.div className='fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#80bfff]'
         variants={TransitionVariants} initial='initial' animate='animate' exit='exit'
-        transition={{ delay: 0.6, duration: 0.6, ease: 'easeInOut' }}>1</motion.div>
+        transition={{ delay: 0.6, duration: 0.6, ease: 'easeInOut' }}></motion.div>
     </>
   );
 };
