@@ -12,14 +12,6 @@ const dataProduk = [
         title: 'Material Berkualitas Tinggi',
         description: 'Dibuat dari bahan langka yang terbuat dari kayu, memberikan keunikan dan keindahan yang langka.',
       },
-      {
-        title: 'Desain Unik',
-        description: 'Setiap produk dirancang secara unik dan dibuat dengan tangan, membutuhkan waktu yang lama untuk setiap pembuatannya.',
-      },
-      {
-        title: 'Penggunaan Serbaguna',
-        description: 'Cocok untuk pameran atau pesta untuk menunjukkan keunikan dan efek penyembuhan saat digunakan.',
-      },
     ],
   },
   {
@@ -29,19 +21,11 @@ const dataProduk = [
         title: 'Efek Penyembuhan',
         description: 'Dipercaya memiliki efek penyembuhan saat digunakan untuk minum, memberikan pengalaman yang istimewa.',
       },
-      {
-        title: 'Elegan dan Langka',
-        description: 'Didesain dengan keanggunan dan kesederhanaan yang langka, cocok untuk penggunaan sehari-hari.',
-      },
     ],
   },
   {
     title: 'Bahan',
     info: [
-      {
-        title: 'Bahan Langka',
-        description: 'Dipilih dengan teliti untuk memberikan produk yang langka dan bernilai tinggi.',
-      },
       {
         title: 'Handcraft',
         description: 'Setiap produk dibuat dengan tangan oleh pengrajin terampil, memastikan kualitas yang luar biasa.',
@@ -51,10 +35,6 @@ const dataProduk = [
   {
     title: 'Desain',
     info: [
-      {
-        title: 'Elegan dan Ergonomis',
-        description: 'Desain yang elegan dan ergonomis, memberikan pengalaman pengguna yang nyaman dan istimewa.',
-      },
       {
         title: 'Kesempurnaan Setiap Detail',
         description: 'Dirancang dengan teliti untuk memastikan setiap detail mencerminkan keindahan dan kualitas produk.',
@@ -81,7 +61,7 @@ const About = () => {
     initial='hidden'
     animate='show'
     exit='hidden'
-    className='hidden xl:flex absolute bottom-0 -left-[370px]'>
+    className='hidden xl:flex absolute bottom-0 -left-[400px] -top-3'>
       <Avatar />
     </motion.div>
     <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
@@ -91,7 +71,7 @@ const About = () => {
 
         {/* counter hitungan  */}
         <div>
-            <div className='flex flex-1 xl:gap-x-6'>
+            <div className='flex flex-1 xl:gap-x-4'>
               {/* experience  */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0' >
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2' >
@@ -117,7 +97,7 @@ const About = () => {
       </div>
       {/* info  */}
       <div className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
-          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:max-8 mb-4'>
+          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:max-8 mb-4 mt-8'>
             {dataProduk.map((item, itemIndex) => (
               <div
                 key={itemIndex}
